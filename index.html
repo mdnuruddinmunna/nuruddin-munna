@@ -1,0 +1,1049 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Nuruddin Munna</title>
+<meta name="description" content="Nuruddin Munna, video editor and motion graphics artist. Shorts, Reels, TikTok, long-form YouTube, podcast and talking-head editing for brands and creators in the UK, US, Australia and Canada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,700;10..72,800;10..72,900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Edit-suite palette: graphite ground, clip-label colours from the timeline.
+   V1 (vertical, 9:16) = mango · V2 (horizontal, 16:9) = cerulean · playhead = red */
+:root{
+  --ground:#111214;
+  --ground-2:#15161A;
+  --panel:#1A1C20;
+  --line:#2B2E34;
+  --line-soft:#202328;
+  --text:#EEECE6;
+  --mute:#A29F98;
+  --dim:#75726D;
+  --v1:#F0A541;
+  --v1-ink:#1C1307;
+  --v2:#5DA8EA;
+  --v2-ink:#06121C;
+  --rec:#E5484D;
+  --display:"Big Shoulders Display","Big Shoulders","Arial Narrow","Roboto Condensed",Impact,sans-serif;
+  --body:"Instrument Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--ground)}
+body{margin:0;background:var(--ground);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;text-wrap:balance}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+dl,dd{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--v1);outline-offset:3px;border-radius:3px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+.wrap{width:100%;max-width:1180px;margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+section{scroll-margin-top:76px}
+.mono{font-family:var(--mono)}
+.eyebrow{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.sw{display:inline-block;width:18px;height:8px;border-radius:2px;background:var(--v1)}
+.sw.h{background:var(--v2)}
+.block{padding-block:clamp(56px,8vw,104px)}
+.rule{border:0;height:1px;background:var(--line-soft);margin:0}
+
+/* ——— bar ——— */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(17,18,20,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.bar-in{display:flex;align-items:center;gap:24px;min-height:60px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.3rem;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.mark .clips{display:grid;gap:3px}
+.mark .clips i{display:block;height:5px;border-radius:1px;background:var(--v2);width:22px}
+.mark .clips i+i{background:var(--v1);width:14px}
+.bar nav{display:flex;gap:22px;margin-left:auto}
+.bar nav a{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);text-decoration:none}
+.bar nav a:hover{color:var(--text)}
+.bar .btn{margin-left:0}
+@media (max-width:900px){.bar nav{display:none}.bar .btn{margin-left:auto}}
+@media (max-width:440px){.mark{font-size:1.08rem;gap:8px}.bar-in{gap:12px}.bar .btn-sm{padding:8px 12px;font-size:.8rem}}
+
+.btn{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;font-family:var(--body);font-weight:600;font-size:.95rem;padding:12px 20px;border-radius:3px;text-decoration:none;border:1px solid transparent;cursor:pointer;background:none;transition:transform .15s ease,background-color .15s ease,border-color .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-fill{background:var(--v1);color:var(--v1-ink)}
+.btn-fill:hover{background:#F6B560}
+.btn-ghost{border-color:var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--mute);background:var(--ground-2)}
+.btn-sm{padding:8px 15px;font-size:.84rem}
+
+/* ——— hero ——— */
+.hero{padding-block:clamp(40px,6vw,84px) clamp(32px,4vw,56px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);gap:clamp(32px,6vw,88px);align-items:center}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.status{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.rec{width:8px;height:8px;border-radius:50%;background:var(--rec);box-shadow:0 0 0 4px rgba(229,72,77,.18);flex:none}
+@media (prefers-reduced-motion:no-preference){.rec{animation:blink 2.4s ease-in-out infinite}}
+@keyframes blink{50%{opacity:.4}}
+h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(4rem,10.5vw,8.6rem);line-height:.8;letter-spacing:-.005em;margin-top:22px}
+h1 span{display:block}
+h1 .l2{color:var(--v1)}
+.role{margin-top:22px;font-family:var(--mono);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text)}
+.role b{color:var(--dim);font-weight:400;padding-inline:.4em}
+.lede{margin-top:16px;max-width:46ch;color:var(--mute);font-size:1.06rem}
+.lede strong{color:var(--text);font-weight:500}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.facts{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:12px 32px;margin-top:34px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.facts dt{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.facts dd{font-size:.98rem;font-weight:500;font-variant-numeric:tabular-nums;margin-top:2px}
+@media (max-width:620px){.facts{grid-template-columns:1fr 1fr}}
+
+.monitor{width:100%;max-width:300px;justify-self:end}
+@media (max-width:860px){.monitor{justify-self:center}}
+.screen{position:relative;aspect-ratio:9/16;max-width:100%;background:#000;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.screen video,.screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.safe{position:absolute;top:13%;bottom:21%;left:6%;right:15%;border:1px dashed rgba(238,236,230,.32);pointer-events:none}
+.safe span{position:absolute;left:-1px;bottom:100%;margin-bottom:4px;font-family:var(--mono);font-size:.54rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(238,236,230,.62);text-shadow:0 1px 2px #000}
+.mon-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:10px;font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;color:var(--dim);font-variant-numeric:tabular-nums}
+.mon-bar .tcv{display:inline-flex;align-items:center;gap:8px;color:var(--text)}
+.mon-bar .rec{width:6px;height:6px;box-shadow:none}
+
+/* ——— timeline index ——— */
+.tl{border:1px solid var(--line);background:var(--ground-2);border-radius:6px;overflow:hidden}
+.tl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 20px;padding:14px 16px;border-bottom:1px solid var(--line-soft)}
+.tl-head h2{font-family:var(--mono);font-weight:500;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.readout{font-family:var(--mono);font-size:.72rem;color:var(--text);font-variant-numeric:tabular-nums;min-height:1.2em}
+.readout .k{color:var(--dim)}
+.tl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tl-body{display:flex;min-width:760px}
+.heads{flex:0 0 58px;border-right:1px solid var(--line-soft)}
+.heads div{height:46px;display:flex;align-items:center;gap:7px;padding-left:12px;font-family:var(--mono);font-size:.68rem;color:var(--mute);border-bottom:1px solid var(--line-soft)}
+.heads .rl{height:28px}
+.lanes{position:relative;flex:1}
+.ruler{position:relative;height:28px;border-bottom:1px solid var(--line-soft)}
+.tick{position:absolute;bottom:0;width:1px;height:6px;background:var(--line)}
+.tick.major{height:11px;background:var(--dim)}
+.tick span{position:absolute;bottom:13px;left:4px;font-family:var(--mono);font-style:normal;font-size:.6rem;color:var(--dim);font-variant-numeric:tabular-nums;white-space:nowrap}
+.lane{position:relative;height:46px;border-bottom:1px solid var(--line-soft)}
+.lane:last-child{border-bottom:0}
+.clip{position:absolute;top:7px;bottom:7px;border:0;border-radius:3px;padding:0 7px;background:var(--v1);color:var(--v1-ink);font-family:var(--body);font-weight:600;font-size:.66rem;text-align:left;cursor:pointer;overflow:hidden;min-width:6px}
+.clip.h{background:var(--v2);color:var(--v2-ink)}
+.clip span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:32px}
+.clip:hover,.clip:focus-visible,.clip.on{filter:brightness(1.15) saturate(1.1)}
+.clip:focus-visible{outline-offset:1px}
+.playhead{position:absolute;top:0;bottom:0;left:0;width:1px;background:var(--rec);pointer-events:none;z-index:3;transition:left .28s ease}
+.playhead::before{content:"";position:absolute;top:0;left:-5px;border:5px solid transparent;border-top:7px solid var(--rec)}
+@media (prefers-reduced-motion:reduce){.playhead{transition:none}}
+.tl-foot{display:flex;flex-wrap:wrap;gap:6px 20px;padding:10px 16px;border-top:1px solid var(--line-soft);font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;color:var(--dim)}
+.tl-foot span{display:inline-flex;align-items:center;gap:7px}
+
+/* ——— bins ——— */
+.bin-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:18px 40px;margin-bottom:34px}
+.bin-head h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(2.4rem,6.4vw,4.2rem);line-height:.88;letter-spacing:.005em;margin-top:12px}
+.bin-head > p{max-width:46ch;color:var(--mute);font-size:.98rem}
+
+.grid-v{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px}
+@media (min-width:720px){.grid-v{grid-template-columns:repeat(5,minmax(0,1fr));gap:34px 16px}}
+.card{display:flex;flex-direction:column;gap:9px;width:100%;padding:0;border:0;background:none;text-align:left;cursor:pointer}
+.thumb{position:relative;display:block;width:100%;max-width:100%;overflow:hidden;border-radius:5px;background:#000;border:1px solid var(--line);padding:0;cursor:pointer;transition:border-color .2s ease}
+.thumb.v{aspect-ratio:9/16}
+.thumb.h{aspect-ratio:16/9}
+.thumb img{width:100%;height:100%;object-fit:cover}
+@media (prefers-reduced-motion:no-preference){.thumb img{transition:transform .5s ease}.card:hover .thumb img,.thumb.h:hover img{transform:scale(1.035)}}
+.card:hover .thumb,.card:focus-visible .thumb{border-color:var(--v1)}
+.thumb.h:hover,.thumb.h:focus-visible{border-color:var(--v2)}
+.tag,.dur,.xnote{position:absolute;font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text);background:rgba(17,18,20,.8);border:1px solid rgba(238,236,230,.1);padding:3px 7px;border-radius:2px;line-height:1.4;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.tag{top:8px;left:8px}
+.dur{bottom:8px;right:8px;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.xnote{top:8px;right:8px;color:var(--v2)}
+.pbtn{position:absolute;left:8px;bottom:8px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--v1);color:var(--v1-ink);transition:transform .2s ease}
+.pbtn svg{width:11px;height:11px;fill:currentColor;margin-left:2px}
+.pbtn.big{left:12px;bottom:12px;width:44px;height:44px;background:var(--v2);color:var(--v2-ink)}
+.pbtn.big svg{width:15px;height:15px}
+.card:hover .pbtn,.thumb.h:hover .pbtn{transform:scale(1.08)}
+.c-title{font-weight:600;font-size:.94rem;line-height:1.3;min-height:2.6em}
+.c-sub{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+
+.grid-h{display:grid;grid-template-columns:1fr;gap:48px 28px}
+@media (min-width:760px){.grid-h{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.lcard{display:flex;flex-direction:column;gap:18px}
+.kicker{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--v2)}
+.lcard h3{font-family:var(--body);font-size:1.28rem;font-weight:600;line-height:1.25;letter-spacing:-.01em;margin-top:6px}
+.lcard .desc{color:var(--mute);font-size:.95rem;margin-top:8px;max-width:60ch}
+.specs{display:grid;gap:4px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line-soft)}
+.specs div{display:flex;gap:10px;align-items:baseline}
+.specs dt{min-width:72px;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.specs dd{font-family:var(--mono);font-size:.76rem;font-variant-numeric:tabular-nums}
+
+/* ——— podcast ——— */
+.sw.pod,.clip.pod{background-image:repeating-linear-gradient(135deg,rgba(6,18,28,.28) 0 3px,transparent 3px 7px)}
+.shows{display:grid;gap:0;border-top:1px solid var(--line)}
+.show{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(22px,4vw,48px);align-items:start;padding:clamp(28px,4vw,44px) 0;border-bottom:1px solid var(--line-soft)}
+@media (max-width:820px){.show{grid-template-columns:1fr}}
+.s-body h3{font-family:var(--body);font-size:1.28rem;font-weight:600;line-height:1.25;letter-spacing:-.01em;margin-top:6px}
+.s-body .desc{color:var(--mute);font-size:.95rem;margin-top:8px;max-width:60ch}
+.s-clips{margin-top:18px}
+.s-lab{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.s-row{display:flex;gap:12px;margin-top:10px}
+.mclip{display:flex;flex-direction:column;gap:7px;width:104px;padding:0;border:0;background:none;text-align:left;cursor:pointer}
+.mclip .pbtn{width:22px;height:22px;left:6px;bottom:6px}
+.mclip .pbtn svg{width:9px;height:9px}
+.mclip:hover .thumb,.mclip:focus-visible .thumb{border-color:var(--v1)}
+.mclip:hover .pbtn{transform:scale(1.08)}
+@media (prefers-reduced-motion:no-preference){.mclip:hover .thumb img{transform:scale(1.035)}}
+.m-title{font-size:.74rem;font-weight:500;line-height:1.3;color:var(--mute)}
+.s-yt{margin-top:22px}
+.s-yt svg{width:18px;height:13px;fill:none;stroke:currentColor;stroke-width:1.3}
+.s-yt svg path{fill:currentColor;stroke:none}
+.pod-do{margin-top:clamp(44px,6vw,72px)}
+.pod-h{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.3rem);line-height:.92;margin-bottom:18px}
+.p-link{align-self:flex-start;margin-top:4px}
+
+/* ——— services ——— */
+.rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(24px,4vw,56px)}
+@media (max-width:760px){.rows{grid-template-columns:1fr}}
+.row{display:grid;grid-template-columns:86px minmax(0,1fr);gap:16px;padding:20px 0;border-top:1px solid var(--line-soft)}
+.row .fmt{font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;color:var(--mute);padding-top:4px;text-transform:uppercase}
+.row h3{font-size:1.04rem;font-weight:600}
+.row p{color:var(--mute);font-size:.92rem;margin-top:4px}
+
+/* ——— experience ——— */
+.xp{border-top:1px solid var(--line)}
+.xp-row{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.55fr) minmax(0,1.3fr);gap:6px 32px;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--line-soft)}
+.xp-co{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(1.8rem,4vw,2.6rem);line-height:.92;letter-spacing:.01em}
+.xp-role{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--v1)}
+.xp-note{color:var(--mute);font-size:.95rem}
+.xp-note small{display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+@media (max-width:760px){.xp-row{grid-template-columns:1fr;gap:8px}}
+
+/* ——— about ——— */
+.about{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(28px,5vw,64px);align-items:start}
+@media (max-width:820px){.about{grid-template-columns:1fr}}
+.portrait{margin:0;max-width:320px;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:var(--panel)}
+.portrait img{width:100%;height:auto;filter:grayscale(1) contrast(1.05);transition:filter .4s ease}
+.portrait:hover img{filter:none}
+.cap{display:flex;justify-content:space-between;gap:10px;max-width:320px;margin-top:10px;font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;color:var(--dim);text-transform:uppercase}
+.bio h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.8vw,3rem);line-height:.92;margin:12px 0 22px}
+.bio p{color:var(--mute);max-width:62ch}
+.bio p+p{margin-top:14px}
+.bio p strong{color:var(--text);font-weight:500}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+@media (max-width:520px){.tools{grid-template-columns:1fr}}
+.tool{border:1px solid var(--line-soft);background:var(--ground-2);border-radius:4px;padding:14px 16px}
+.tool h4{font-size:.95rem;font-weight:600}
+.tool p{color:var(--dim);font-size:.84rem;margin-top:2px}
+.clients{margin-top:30px}
+.clients li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 18px;padding:12px 0;border-bottom:1px solid var(--line-soft);align-items:baseline}
+.clients li:first-child{border-top:1px solid var(--line-soft);margin-top:12px}
+.clients .what{font-size:.94rem;font-weight:500}
+.clients .who{font-family:var(--mono);font-size:.72rem;color:var(--mute);text-align:right}
+@media (max-width:520px){.clients li{grid-template-columns:1fr}.clients .who{text-align:left}}
+
+/* ——— feedback ——— */
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(22px,4vw,44px);margin-top:30px}
+@media (max-width:760px){.quotes{grid-template-columns:1fr}}
+.quote{margin:0;border-left:2px solid var(--v1);padding:2px 0 2px 22px}
+.quote blockquote{margin:0;font-size:1.04rem;line-height:1.6}
+.quote figcaption{margin-top:14px;font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.fb-head h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.8vw,3rem);line-height:.92;margin-top:12px}
+
+/* ——— contact ——— */
+.contact{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:clamp(24px,5vw,56px)}
+.contact h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,7vw,4.8rem);line-height:.86;margin-top:14px;max-width:14ch}
+.contact .lede{max-width:52ch}
+.lines{margin-top:30px;border-top:1px solid var(--line-soft)}
+.line{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding:14px 0;border-bottom:1px solid var(--line-soft)}
+.line .k{flex:0 0 90px;font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.line .v{flex:1 1 220px;font-family:var(--mono);font-size:.95rem;word-break:break-all;user-select:all}
+.line .act{display:flex;gap:8px}
+.mini{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 11px;border:1px solid var(--line);border-radius:3px;background:none;color:var(--text);cursor:pointer;text-decoration:none}
+.mini:hover{border-color:var(--mute)}
+.mini.ok{border-color:var(--v1);color:var(--v1)}
+
+footer{margin-top:clamp(56px,8vw,96px);padding-block:34px 44px;border-top:1px solid var(--line-soft)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+
+/* ——— player ——— */
+dialog.player{padding:0;border:1px solid var(--line);border-radius:8px;background:var(--ground-2);color:var(--text);max-width:min(1100px,calc(100vw - 32px));max-height:calc(100dvh - 32px);width:auto;overflow:auto}
+dialog.player::backdrop{background:rgba(8,9,10,.88);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.p-in{display:grid;gap:0}
+.p-media{background:#000;display:grid;place-items:center}
+.p-media video{background:#000;display:block}
+dialog.is-v .p-in{grid-template-columns:auto minmax(0,340px)}
+dialog.is-v .p-media video{height:min(80dvh,780px);width:auto;aspect-ratio:9/16;max-width:100%}
+dialog.is-h{width:min(1000px,calc(100vw - 32px))}
+dialog.is-h .p-media video{width:100%;aspect-ratio:16/9;max-height:62dvh}
+.p-info{display:flex;flex-direction:column;gap:10px;padding:22px 22px 20px}
+.p-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.p-track{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.p-info h3{font-size:1.3rem;font-weight:600;line-height:1.25}
+.p-who{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--v1)}
+dialog.is-h .p-who{color:var(--v2)}
+.p-desc{color:var(--mute);font-size:.94rem}
+.p-note{font-family:var(--mono);font-size:.68rem;color:var(--v2)}
+.p-nav{display:flex;gap:8px;margin-top:auto;padding-top:14px}
+.x{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:none;cursor:pointer;color:var(--text)}
+.x:hover{border-color:var(--mute)}
+.x svg{width:14px;height:14px;stroke:currentColor;stroke-width:1.8;fill:none}
+@media (max-width:760px){
+  dialog.player{max-width:100vw;max-height:100dvh;width:100vw;height:100dvh;border-radius:0;border:0;margin:0}
+  dialog.is-v .p-in{grid-template-columns:1fr}
+  dialog.is-v .p-media video{height:min(68dvh,720px)}
+  dialog.is-h .p-media video{max-height:none}
+  .p-info{padding:16px}
+}
+</style>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="mark" href="#top" aria-label="Nuruddin Munna, back to top"><span class="clips" aria-hidden="true"><i></i><i></i></span>Nuruddin Munna</a>
+    <nav aria-label="Sections">
+      <a href="#shorts">Shorts</a>
+      <a href="#long-form">Long-form</a>
+      <a href="#podcast">Podcast</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-fill btn-sm" href="https://wa.me/8801881461001" target="_blank" rel="noopener">Start a project</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <p class="status"><span class="rec" aria-hidden="true"></span>Available for new projects</p>
+        <h1><span>Nuruddin</span><span class="l2">Munna</span></h1>
+        <p class="role">Video Editor<b>/</b>Motion Graphics</p>
+        <p class="lede"><strong>I turn raw footage into content people actually finish watching.</strong> Three years cutting Shorts, Reels, long-form YouTube, podcasts and talking-head video for brands, agencies and creators.</p>
+        <div class="cta">
+          <a class="btn btn-fill" href="#shorts">Watch the work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <dl class="facts">
+          <div><dt>Experience</dt><dd>3 years</dd></div>
+          <div><dt>Edits on this page</dt><dd>23</dd></div>
+          <div><dt>Creators cut for</dt><dd>9+</dd></div>
+          <div><dt>Markets</dt><dd>UK · US · AU · CA</dd></div>
+        </dl>
+      </div>
+      <figure class="monitor" style="margin:0">
+        <div class="screen">
+          <video id="reel" src="media/reel.mp4" poster="media/reel-poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="Silent 16-second montage of vertical edits from this portfolio"></video>
+          <span class="safe" aria-hidden="true"><span>Caption safe</span></span>
+        </div>
+        <figcaption class="mon-bar"><span>PGM · Reel 2026 · 9:16</span><span class="tcv"><span class="rec" aria-hidden="true"></span><span id="reel-tc">00:00:00:00</span></span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="wrap" aria-labelledby="tl-title">
+    <div class="tl">
+      <div class="tl-head">
+        <h2 id="tl-title">Sequence · every edit on this page, end to end</h2>
+        <p class="readout" id="readout" aria-live="polite"><span class="k">23 edits · total</span> 00:36:15:12</p>
+      </div>
+      <div class="tl-scroll">
+        <div class="tl-body">
+          <div class="heads" aria-hidden="true">
+            <div class="rl"></div>
+            <div><span class="sw h pod"></span>V3</div>
+            <div><span class="sw h"></span>V2</div>
+            <div><span class="sw"></span>V1</div>
+          </div>
+          <div class="lanes">
+            <div class="ruler" aria-hidden="true"><i class="tick major" style="left:0.000%"><span>00:00</span></i><i class="tick" style="left:5.882%"></i><i class="tick major" style="left:11.765%"><span>02:00</span></i><i class="tick" style="left:17.647%"></i><i class="tick major" style="left:23.529%"><span>04:00</span></i><i class="tick" style="left:29.412%"></i><i class="tick major" style="left:35.294%"><span>06:00</span></i><i class="tick" style="left:41.176%"></i><i class="tick major" style="left:47.059%"><span>08:00</span></i><i class="tick" style="left:52.941%"></i><i class="tick major" style="left:58.824%"><span>10:00</span></i><i class="tick" style="left:64.706%"></i><i class="tick major" style="left:70.588%"><span>12:00</span></i><i class="tick" style="left:76.471%"></i><i class="tick major" style="left:82.353%"><span>14:00</span></i><i class="tick" style="left:88.235%"></i><i class="tick major" style="left:94.118%"><span>16:00</span></i><i class="tick" style="left:100.000%"></i></div>
+            <div class="lane" role="group" aria-label="V3, podcast episodes">
+<button class="clip h pod" type="button" data-play="p_rel" data-in="00:00:00:00" data-out="00:01:32:03" data-t0="0.000" style="left:0.000%;width:calc(9.029% - 2px)" aria-label="V3: Relatables, Studio Episode, 01:32"><span>Relatables, Studio Episode</span></button>
+<button class="clip h pod" type="button" data-play="p_unc" data-in="00:01:32:03" data-out="00:03:41:17" data-t0="9.029" style="left:9.029%;width:calc(12.693% - 2px)" aria-label="V3: Uncensored, Two-Guest Sit-Down, 02:09"><span>Uncensored, Two-Guest Sit-Down</span></button>
+<button class="clip h pod" type="button" data-play="p_chi" data-in="00:03:41:17" data-out="00:05:50:27" data-t0="21.722" style="left:21.722%;width:calc(12.680% - 2px)" aria-label="V3: Remote Interview: Corey Hiben &amp; Dr Bobby Ilijasevic, 02:09"><span>Remote Interview: Corey Hiben &amp; Dr Bobby Ilijasevic</span></button>
+            </div>
+            <div class="lane" role="group" aria-label="V2, horizontal long-form edits">
+<button class="clip h" type="button" data-play="gemini" data-in="00:00:00:00" data-out="00:06:38:02" data-t0="0.000" style="left:0.000%;width:calc(39.026% - 2px)" aria-label="V2: Google Gemini Will Dominate ChatGPT in 2026, 06:38"><span>Google Gemini Will Dominate ChatGPT in 2026</span></button>
+<button class="clip h" type="button" data-play="long22" data-in="00:06:38:02" data-out="00:12:57:02" data-t0="39.026" style="left:39.026%;width:calc(37.157% - 2px)" aria-label="V2: Choosing Who You Are, 06:19"><span>Choosing Who You Are</span></button>
+<button class="clip h" type="button" data-play="onlyg" data-in="00:12:57:02" data-out="00:13:48:15" data-t0="76.183" style="left:76.183%;width:calc(5.042% - 2px)" aria-label="V2: What a Healthy Account Looks Like, 00:51"><span>What a Healthy Account Looks Like</span></button>
+<button class="clip h" type="button" data-play="pierre" data-in="00:13:48:15" data-out="00:14:11:11" data-t0="81.225" style="left:81.225%;width:calc(2.243% - 2px)" aria-label="V2: The One Metric That Matters, 00:23"><span>The One Metric That Matters</span></button>
+            </div>
+            <div class="lane" role="group" aria-label="V1, vertical short-form edits">
+<button class="clip" type="button" data-play="s_funnels" data-in="00:00:00:00" data-out="00:00:59:16" data-t0="0.000" style="left:0.000%;width:calc(5.837% - 2px)" aria-label="V1: The Two Funnels Every $1M Business Must Have, 01:00"><span>The Two Funnels Every $1M Business Must Have</span></button>
+<button class="clip" type="button" data-play="s_fleet" data-in="00:00:59:16" data-out="00:01:42:20" data-t0="5.837" style="left:5.837%;width:calc(4.229% - 2px)" aria-label="V1: Fleet Week Is My Weakness, 00:43"><span>Fleet Week Is My Weakness</span></button>
+<button class="clip" type="button" data-play="s_rel9" data-in="00:01:42:20" data-out="00:02:44:11" data-t0="10.065" style="left:10.065%;width:calc(6.050% - 2px)" aria-label="V1: Relatables, 9 November Episode, 01:02"><span>Relatables, 9 November Episode</span></button>
+<button class="clip" type="button" data-play="s_leaders" data-in="00:02:44:11" data-out="00:03:29:00" data-t0="16.115" style="left:16.115%;width:calc(4.376% - 2px)" aria-label="V1: Why Great Leaders Build Other Leaders, 00:45"><span>Why Great Leaders Build Other Leaders</span></button>
+<button class="clip" type="button" data-play="s_bully" data-in="00:03:29:00" data-out="00:05:48:26" data-t0="20.491" style="left:20.491%;width:calc(13.712% - 2px)" aria-label="V1: We Loved Bullying Boys as Kids, 02:20"><span>We Loved Bullying Boys as Kids</span></button>
+<button class="clip" type="button" data-play="s_rel7" data-in="00:05:48:26" data-out="00:06:14:24" data-t0="34.203" style="left:34.203%;width:calc(2.541% - 2px)" aria-label="V1: Relatables, 7 November Episode, 00:26"><span>Relatables, 7 November Episode</span></button>
+<button class="clip" type="button" data-play="traders" data-in="00:06:14:24" data-out="00:07:19:13" data-t0="36.744" style="left:36.744%;width:calc(6.337% - 2px)" aria-label="V1: 3 Mistakes Traders Make When Picking Stocks, 01:05"><span>3 Mistakes Traders Make When Picking Stocks</span></button>
+<button class="clip" type="button" data-play="ajoy" data-in="00:07:19:13" data-out="00:08:11:26" data-t0="43.081" style="left:43.081%;width:calc(5.141% - 2px)" aria-label="V1: The Question Before You Buy, 00:52"><span>The Question Before You Buy</span></button>
+<button class="clip" type="button" data-play="clip1" data-in="00:08:11:26" data-out="00:09:01:27" data-t0="48.221" style="left:48.221%;width:calc(4.906% - 2px)" aria-label="V1: Walmart Over Real Estate, 00:50"><span>Walmart Over Real Estate</span></button>
+<button class="clip" type="button" data-play="oos" data-in="00:09:01:27" data-out="00:10:02:09" data-t0="53.127" style="left:53.127%;width:calc(5.922% - 2px)" aria-label="V1: Out of Sight, Out of Mind, 01:00"><span>Out of Sight, Out of Mind</span></button>
+<button class="clip" type="button" data-play="italy" data-in="00:10:02:09" data-out="00:10:50:15" data-t0="59.049" style="left:59.049%;width:calc(4.726% - 2px)" aria-label="V1: Americans Who Moved to Italy, 00:48"><span>Americans Who Moved to Italy</span></button>
+<button class="clip" type="button" data-play="claude" data-in="00:10:50:15" data-out="00:11:22:06" data-t0="63.775" style="left:63.775%;width:calc(3.106% - 2px)" aria-label="V1: AI Callback Logic, Built with Claude, 00:32"><span>AI Callback Logic, Built with Claude</span></button>
+<button class="clip" type="button" data-play="sconye" data-in="00:11:22:06" data-out="00:13:14:27" data-t0="66.881" style="left:66.881%;width:calc(11.050% - 2px)" aria-label="V1: Paranormal Storytime, 01:53"><span>Paranormal Storytime</span></button>
+<button class="clip" type="button" data-play="trailer" data-in="00:13:14:27" data-out="00:14:14:21" data-t0="77.931" style="left:77.931%;width:calc(5.862% - 2px)" aria-label="V1: Two-Host Podcast Trailer, 01:00"><span>Two-Host Podcast Trailer</span></button>
+<button class="clip" type="button" data-play="gala" data-in="00:14:14:21" data-out="00:14:52:15" data-t0="83.793" style="left:83.793%;width:calc(3.706% - 2px)" aria-label="V1: Holiday Gala Highlight, 00:38"><span>Holiday Gala Highlight</span></button>
+<button class="clip" type="button" data-play="stamp" data-in="00:14:52:15" data-out="00:16:13:04" data-t0="87.499" style="left:87.499%;width:calc(7.905% - 2px)" aria-label="V1: Transfer Duty in NSW, 01:21"><span>Transfer Duty in NSW</span></button>
+            </div>
+            <span class="playhead" id="playhead" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+      <div class="tl-foot">
+        <span><span class="sw h pod"></span>V3 · Podcast episodes · 3 edits</span>
+        <span><span class="sw h"></span>V2 · Horizontal 16:9 · 4 edits</span>
+        <span><span class="sw"></span>V1 · Vertical 9:16 · 16 edits</span>
+        <span>Clip widths are true to runtime · click any clip to play it</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap block" id="shorts">
+    <div class="bin-head">
+      <div>
+        <p class="eyebrow"><span class="sw"></span>V1 · Vertical 9:16 · 16 edits</p>
+        <h2>Shorts, Reels<br>&amp; TikTok</h2>
+      </div>
+      <p>Hook in the first three seconds, captions that work with the sound off, and framing that keeps faces and text out from under the app's buttons. Podcast clips, explainers, interviews, storytime and brand work.</p>
+    </div>
+    <ul class="grid-v">
+      <li>
+        <button class="card" type="button" data-play="s_funnels" aria-label="Play preview of The Two Funnels Every $1M Business Must Have">
+          <span class="thumb v">
+            <img src="media/s_funnels.jpg" alt="" loading="lazy" width="360" height="640">
+            <span class="tag">Podcast clip</span>
+            <span class="dur">01:00</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">The Two Funnels Every $1M Business Must Have</span>
+          <span class="c-sub">Chirox Marketing</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="s_fleet" aria-label="Play preview of Fleet Week Is My Weakness">
+          <span class="thumb v">
+            <img src="media/s_fleet.jpg" alt="" loading="lazy" width="360" height="640">
+            <span class="tag">Podcast clip</span>
+            <span class="dur">00:43</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Fleet Week Is My Weakness</span>
+          <span class="c-sub">Uncensored with Mx Tomie</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="s_rel9" aria-label="Play preview of Relatables, 9 November Episode">
+          <span class="thumb v">
+            <img src="media/s_rel9.jpg" alt="" loading="lazy" width="360" height="640">
+            <span class="tag">Podcast clip</span>
+            <span class="dur">01:02</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Relatables, 9 November Episode</span>
+          <span class="c-sub">Relatables</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="s_leaders" aria-label="Play preview of Why Great Leaders Build Other Leaders">
+          <span class="thumb v">
+            <img src="media/s_leaders.jpg" alt="" loading="lazy" width="360" height="640">
+            <span class="tag">Podcast clip</span>
+            <span class="dur">00:45</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Why Great Leaders Build Other Leaders</span>
+          <span class="c-sub">Chirox Marketing</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="s_bully" aria-label="Play preview of We Loved Bullying Boys as Kids">
+          <span class="thumb v">
+            <img src="media/s_bully.jpg" alt="" loading="lazy" width="360" height="640">
+            <span class="tag">Podcast clip</span>
+            <span class="dur">02:20</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">We Loved Bullying Boys as Kids</span>
+          <span class="c-sub">Uncensored with Mx Tomie</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="s_rel7" aria-label="Play preview of Relatables, 7 November Episode">
+          <span class="thumb v">
+            <img src="media/s_rel7.jpg" alt="" loading="lazy" width="360" height="640">
+            <span class="tag">Podcast clip</span>
+            <span class="dur">00:26</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Relatables, 7 November Episode</span>
+          <span class="c-sub">Relatables</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="traders" aria-label="Play 3 Mistakes Traders Make When Picking Stocks, 01:04">
+          <span class="thumb v">
+            <img src="media/traders.jpg" alt="" loading="lazy" width="540" height="960">
+            <span class="tag">Finance</span>
+            <span class="dur">01:04</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">3 Mistakes Traders Make When Picking Stocks</span>
+          <span class="c-sub">Finance creator</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="ajoy" aria-label="Play The Question Before You Buy, 00:52">
+          <span class="thumb v">
+            <img src="media/ajoy.jpg" alt="" loading="lazy" width="540" height="960">
+            <span class="tag">Real estate</span>
+            <span class="dur">00:52</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">The Question Before You Buy</span>
+          <span class="c-sub">Wiseman Realty</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="clip1" aria-label="Play Walmart Over Real Estate, 00:50">
+          <span class="thumb v">
+            <img src="media/clip1.jpg" alt="" loading="lazy" width="540" height="960">
+            <span class="tag">Podcast clip</span>
+            <span class="dur">00:50</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Walmart Over Real Estate</span>
+          <span class="c-sub">Podcast</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="oos" aria-label="Play Out of Sight, Out of Mind, 01:00">
+          <span class="thumb v">
+            <img src="media/oos.jpg" alt="" loading="lazy" width="540" height="960">
+            <span class="tag">Podcast clip</span>
+            <span class="dur">01:00</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Out of Sight, Out of Mind</span>
+          <span class="c-sub">Podcast</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="italy" aria-label="Play Americans Who Moved to Italy, 00:48">
+          <span class="thumb v">
+            <img src="media/italy.jpg" alt="" loading="lazy" width="540" height="960">
+            <span class="tag">Interview reel</span>
+            <span class="dur">00:48</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Americans Who Moved to Italy</span>
+          <span class="c-sub">Smart Move Italy</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="claude" aria-label="Play AI Callback Logic, Built with Claude, 00:31">
+          <span class="thumb v">
+            <img src="media/claude.jpg" alt="" loading="lazy" width="540" height="960">
+            <span class="tag">AI explainer</span>
+            <span class="dur">00:31</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">AI Callback Logic, Built with Claude</span>
+          <span class="c-sub">Rahi</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="sconye" aria-label="Play Paranormal Storytime, 01:52">
+          <span class="thumb v">
+            <img src="media/sconye.jpg" alt="" loading="lazy" width="540" height="960">
+            <span class="tag">Storytime</span>
+            <span class="dur">01:52</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Paranormal Storytime</span>
+          <span class="c-sub">Storytelling creator</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="trailer" aria-label="Play Two-Host Podcast Trailer, 00:59">
+          <span class="thumb v">
+            <img src="media/trailer.jpg" alt="" loading="lazy" width="540" height="960">
+            <span class="tag">Podcast trailer</span>
+            <span class="dur">00:59</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Two-Host Podcast Trailer</span>
+          <span class="c-sub">The Vertical Buzz</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="gala" aria-label="Play Holiday Gala Highlight, 00:37">
+          <span class="thumb v">
+            <img src="media/gala.jpg" alt="" loading="lazy" width="540" height="960">
+            <span class="tag">Event film</span>
+            <span class="dur">00:37</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Holiday Gala Highlight</span>
+          <span class="c-sub">Event recap</span>
+        </button>
+      </li>
+      <li>
+        <button class="card" type="button" data-play="stamp" aria-label="Play Transfer Duty in NSW, 01:20">
+          <span class="thumb v">
+            <img src="media/stamp.jpg" alt="" loading="lazy" width="540" height="960">
+            <span class="tag">Real estate</span>
+            <span class="dur">01:20</span>
+            <span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+          </span>
+          <span class="c-title">Transfer Duty in NSW</span>
+          <span class="c-sub">Wiseman Realty</span>
+        </button>
+      </li>
+    </ul>
+  </section>
+
+  <hr class="rule">
+
+  <section class="wrap block" id="long-form">
+    <div class="bin-head">
+      <div>
+        <p class="eyebrow"><span class="sw h"></span>V2 · Horizontal 16:9 · 4 edits</p>
+        <h2>Long-form<br>&amp; YouTube</h2>
+      </div>
+      <p>Full episodes and explainers where pacing carries the watch time: B-roll, screen recordings, title cards, sound and motion graphics that explain what the voice can't. The two longest play their opening 75 seconds here.</p>
+    </div>
+    <div class="grid-h">
+      <article class="lcard">
+        <button class="thumb h" type="button" data-play="gemini" aria-label="Play Google Gemini Will Dominate ChatGPT in 2026">
+          <img src="media/gemini.jpg" alt="" loading="lazy" width="960" height="540">
+          <span class="tag">YouTube</span>
+          <span class="dur">06:38</span>
+          <span class="xnote">Excerpt · 01:15 of 06:38</span>
+          <span class="pbtn big" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+        </button>
+        <div class="l-body">
+          <p class="kicker">Tech &amp; markets channel</p>
+          <h3>Google Gemini Will Dominate ChatGPT in 2026</h3>
+          <p class="desc">A six-and-a-half-minute YouTube essay. A talking head in a dark office, screen recordings of ChatGPT and Google with a circular face-cam, full-screen logo title cards on navy, stock charts, and on-location B-roll to break the rhythm.</p>
+          <dl class="specs">
+            <div><dt>Runtime</dt><dd>00:06:38:02</dd></div>
+            <div><dt>Format</dt><dd>16:9 · 30 fps</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="lcard">
+        <button class="thumb h" type="button" data-play="long22" aria-label="Play Choosing Who You Are">
+          <img src="media/long22.jpg" alt="" loading="lazy" width="960" height="540">
+          <span class="tag">YouTube</span>
+          <span class="dur">06:19</span>
+          <span class="xnote">Excerpt · 01:15 of 06:19</span>
+          <span class="pbtn big" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+        </button>
+        <div class="l-body">
+          <p class="kicker">Self-development channel</p>
+          <h3>Choosing Who You Are</h3>
+          <p class="desc">A self-development essay. A studio talking head against a pale grid, broken up with monochrome illustrated scenes, soft-focus type reveals, and a checklist build that lands each idea before moving on.</p>
+          <dl class="specs">
+            <div><dt>Runtime</dt><dd>00:06:19:00</dd></div>
+            <div><dt>Format</dt><dd>16:9 · 30 fps</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="lcard">
+        <button class="thumb h" type="button" data-play="onlyg" aria-label="Play What a Healthy Account Looks Like">
+          <img src="media/onlyg.jpg" alt="" loading="lazy" width="960" height="540">
+          <span class="tag">Business</span>
+          <span class="dur">00:51</span>
+          
+          <span class="pbtn big" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+        </button>
+        <div class="l-body">
+          <p class="kicker">Creator-agency coach</p>
+          <h3>What a Healthy Account Looks Like</h3>
+          <p class="desc">A business talking head shot against a garden window. It opens on a bold stat, colours the operative words in the captions, and builds frosted-glass bullet panels one risk at a time.</p>
+          <dl class="specs">
+            <div><dt>Runtime</dt><dd>00:00:51:13</dd></div>
+            <div><dt>Format</dt><dd>16:9 · 30 fps</dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="lcard">
+        <button class="thumb h" type="button" data-play="pierre" aria-label="Play The One Metric That Matters">
+          <img src="media/pierre.jpg" alt="" loading="lazy" width="960" height="540">
+          <span class="tag">Motion graphics</span>
+          <span class="dur">00:22</span>
+          
+          <span class="pbtn big" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+        </button>
+        <div class="l-body">
+          <p class="kicker">Pierre Perry</p>
+          <h3>The One Metric That Matters</h3>
+          <p class="desc">A business explainer for contractors. The talking head carries the argument while animated icon systems and a stat callout carry the proof. Every build is drawn in After Effects and timed to the line he lands on.</p>
+          <dl class="specs">
+            <div><dt>Runtime</dt><dd>00:00:22:21</dd></div>
+            <div><dt>Format</dt><dd>16:9 · 24 fps</dd></div>
+          </dl>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="wrap block" id="podcast">
+    <div class="bin-head">
+      <div>
+        <p class="eyebrow"><span class="sw h pod"></span>V3 · Podcast · 3 shows</p>
+        <h2>Podcast<br>episodes &amp; clips</h2>
+      </div>
+      <p>Studio and remote shows edited end to end: the multicam episode for YouTube, then the moments worth sharing cut as vertical clips. Episodes play a 25-second preview here. The full shows are on their channels.</p>
+    </div>
+    <div class="shows">
+      <article class="show">
+        <button class="thumb h" type="button" data-play="p_rel" aria-label="Play preview of Relatables, Studio Episode">
+          <img src="media/p_rel.jpg" alt="" loading="lazy" width="640" height="360">
+          <span class="tag">Podcast</span>
+          <span class="dur">01:32</span>
+          <span class="xnote">Preview · 00:25 of 01:32</span>
+          <span class="pbtn big" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+        </button>
+        <div class="s-body">
+          <p class="kicker">Relatables</p>
+          <h3>Relatables, Studio Episode</h3>
+          <p class="desc">A studio show that opens on a &#x27;Coming up&#x27; teaser: black-and-white flash frames, graphic stickers and the best lines of the episode up front. Then camera switches that follow the conversation, with the show&#x27;s artwork kept in frame on the set monitor.</p>
+          <dl class="specs">
+            <div><dt>Runtime</dt><dd>00:01:32:03</dd></div>
+            <div><dt>Format</dt><dd>16:9 · 30 fps</dd></div>
+          </dl>
+          <div class="s-clips">
+            <p class="s-lab">Clips cut from this show</p>
+            <div class="s-row"><button class="mclip" type="button" data-play="s_rel9" aria-label="Play clip: Relatables, 9 November Episode"><span class="thumb v"><img src="media/s_rel9.jpg" alt="" loading="lazy" width="360" height="640"><span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span></span><span class="m-title">Relatables, 9 November Episode</span></button><button class="mclip" type="button" data-play="s_rel7" aria-label="Play clip: Relatables, 7 November Episode"><span class="thumb v"><img src="media/s_rel7.jpg" alt="" loading="lazy" width="360" height="640"><span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span></span><span class="m-title">Relatables, 7 November Episode</span></button></div>
+          </div>
+          <a class="btn btn-ghost btn-sm s-yt" href="https://www.youtube.com/@relatables7858" target="_blank" rel="noopener"><svg viewBox="0 0 20 14" aria-hidden="true"><rect x=".5" y=".5" width="19" height="13" rx="3.5"/><path d="M8 4.2v5.6L12.8 7z"/></svg>Relatables on YouTube</a>
+        </div>
+      </article>
+      <article class="show">
+        <button class="thumb h" type="button" data-play="p_unc" aria-label="Play preview of Uncensored, Two-Guest Sit-Down">
+          <img src="media/p_unc.jpg" alt="" loading="lazy" width="640" height="360">
+          <span class="tag">Podcast</span>
+          <span class="dur">02:09</span>
+          <span class="xnote">Preview · 00:25 of 02:09</span>
+          <span class="pbtn big" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+        </button>
+        <div class="s-body">
+          <p class="kicker">Uncensored with Mx Tomie</p>
+          <h3>Uncensored, Two-Guest Sit-Down</h3>
+          <p class="desc">A two-guest conversation on a styled set. A wide establishing shot, singles on whoever is speaking, the show logo held as a corner bug, and a grade that keeps the red and pink set rich without pushing skin tones.</p>
+          <dl class="specs">
+            <div><dt>Runtime</dt><dd>00:02:09:14</dd></div>
+            <div><dt>Format</dt><dd>16:9 · 30 fps</dd></div>
+          </dl>
+          <div class="s-clips">
+            <p class="s-lab">Clips cut from this show</p>
+            <div class="s-row"><button class="mclip" type="button" data-play="s_fleet" aria-label="Play clip: Fleet Week Is My Weakness"><span class="thumb v"><img src="media/s_fleet.jpg" alt="" loading="lazy" width="360" height="640"><span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span></span><span class="m-title">Fleet Week Is My Weakness</span></button><button class="mclip" type="button" data-play="s_bully" aria-label="Play clip: We Loved Bullying Boys as Kids"><span class="thumb v"><img src="media/s_bully.jpg" alt="" loading="lazy" width="360" height="640"><span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span></span><span class="m-title">We Loved Bullying Boys as Kids</span></button></div>
+          </div>
+          <a class="btn btn-ghost btn-sm s-yt" href="https://www.youtube.com/@UncensoredWithMxTomie" target="_blank" rel="noopener"><svg viewBox="0 0 20 14" aria-hidden="true"><rect x=".5" y=".5" width="19" height="13" rx="3.5"/><path d="M8 4.2v5.6L12.8 7z"/></svg>Uncensored with Mx Tomie on YouTube</a>
+        </div>
+      </article>
+      <article class="show">
+        <button class="thumb h" type="button" data-play="p_chi" aria-label="Play preview of Remote Interview: Corey Hiben &amp; Dr Bobby Ilijasevic">
+          <img src="media/p_chi.jpg" alt="" loading="lazy" width="640" height="360">
+          <span class="tag">Podcast</span>
+          <span class="dur">02:09</span>
+          <span class="xnote">Preview · 00:25 of 02:09</span>
+          <span class="pbtn big" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span>
+        </button>
+        <div class="s-body">
+          <p class="kicker">Chirox Marketing</p>
+          <h3>Remote Interview: Corey Hiben &amp; Dr Bobby Ilijasevic</h3>
+          <p class="desc">A remote interview recorded on two separate webcams, laid out side by side so both faces stay on screen. Name lower thirds for each speaker and burned-in captions so the episode works with the sound off.</p>
+          <dl class="specs">
+            <div><dt>Runtime</dt><dd>00:02:09:10</dd></div>
+            <div><dt>Format</dt><dd>16:9 · 30 fps</dd></div>
+          </dl>
+          <div class="s-clips">
+            <p class="s-lab">Clips cut from this show</p>
+            <div class="s-row"><button class="mclip" type="button" data-play="s_funnels" aria-label="Play clip: The Two Funnels Every $1M Business Must Have"><span class="thumb v"><img src="media/s_funnels.jpg" alt="" loading="lazy" width="360" height="640"><span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span></span><span class="m-title">The Two Funnels Every $1M Business Must Have</span></button><button class="mclip" type="button" data-play="s_leaders" aria-label="Play clip: Why Great Leaders Build Other Leaders"><span class="thumb v"><img src="media/s_leaders.jpg" alt="" loading="lazy" width="360" height="640"><span class="pbtn" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10.2 6z"/></svg></span></span><span class="m-title">Why Great Leaders Build Other Leaders</span></button></div>
+          </div>
+          <a class="btn btn-ghost btn-sm s-yt" href="https://www.youtube.com/@chiroxmarketing" target="_blank" rel="noopener"><svg viewBox="0 0 20 14" aria-hidden="true"><rect x=".5" y=".5" width="19" height="13" rx="3.5"/><path d="M8 4.2v5.6L12.8 7z"/></svg>Chirox Marketing on YouTube</a>
+        </div>
+      </article>
+    </div>
+    <div class="pod-do">
+      <h3 class="pod-h">What a podcast edit covers</h3>
+      <div class="rows">
+      <div class="row"><span class="fmt">Multicam</span><div><h3>Multicam episode edit</h3><p>Every camera and the audio synced, then cut to whoever&#x27;s talking, with reaction shots where they add something and the dead air taken out.</p></div></div>
+      <div class="row"><span class="fmt">Audio</span><div><h3>Clean, even sound</h3><p>Noise and room echo cleaned up, filler and false starts removed, levels matched between voices and the whole episode mastered to a steady loudness.</p></div></div>
+      <div class="row"><span class="fmt">Remote</span><div><h3>Remote interviews</h3><p>Zoom and Riverside recordings laid out side by side or stacked, with name lower thirds so viewers always know who is talking.</p></div></div>
+      <div class="row"><span class="fmt">9:16</span><div><h3>Clips from every episode</h3><p>The strongest moments found and cut hook-first, reframed to vertical and captioned for Shorts, Reels and TikTok.</p></div></div>
+      <div class="row"><span class="fmt">Teaser</span><div><h3>Cold opens &amp; trailers</h3><p>A &#x27;coming up&#x27; open that puts the best lines first, and trailers that sell a new season or guest.</p></div></div>
+      <div class="row"><span class="fmt">Branding</span><div><h3>Show graphics &amp; thumbnails</h3><p>Logo bug, title cards, chapter markers and a thumbnail designed alongside the edit, delivered in 16:9 and 9:16.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="wrap block" id="services">
+    <div class="bin-head">
+      <div>
+        <p class="eyebrow">What I do</p>
+        <h2>Send footage.<br>Get something postable.</h2>
+      </div>
+      <p>Edit, sound, colour, captions, graphics and thumbnail, all handled in one place and delivered in the aspect ratio each platform actually wants.</p>
+    </div>
+    <div class="rows">
+      <div class="row"><span class="fmt">9:16</span><div><h3>Shorts, Reels &amp; TikTok</h3><p>Vertical cuts built for retention: a hook in the first three seconds, captions that carry the audio, and safe-zone framing so nothing gets covered by the app's UI.</p></div></div>
+      <div class="row"><span class="fmt">16:9</span><div><h3>Long-form YouTube</h3><p>Full episode edits: pacing, B-roll, sound design, colour and chapter structure that keep watch time where it should be.</p></div></div>
+      <div class="row"><span class="fmt">Multicam</span><div><h3>Podcast editing</h3><p>Audio and video. Multi-angle cutting, noise and filler cleanup, plus a set of clips pulled from every episode for social.</p></div></div>
+      <div class="row"><span class="fmt">9:16 · 16:9</span><div><h3>Talking head &amp; UGC</h3><p>Coaches, agents, founders and personal brands. Tight trims, clean audio, captions and lower thirds that match your brand.</p></div></div>
+      <div class="row"><span class="fmt">After Effects</span><div><h3>Motion graphics</h3><p>Titles, animated stat callouts, icon systems, logo stings and subtle builds that explain what the voice can't.</p></div></div>
+      <div class="row"><span class="fmt">1280×720</span><div><h3>Thumbnail design</h3><p>Click-first thumbnails designed alongside the edit, so the promise on the thumbnail is the thing the video opens with.</p></div></div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="wrap block" id="experience">
+    <div class="bin-head">
+      <div>
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've<br>worked</h2>
+      </div>
+      <p>An agency, an Australian solar and battery brand, and a global outsourcing company. Different audiences, same job: make the video do what it's for.</p>
+    </div>
+    <div class="xp">
+      <div class="xp-row">
+        <h3 class="xp-co">Electrifying Australia</h3>
+        <p class="xp-role">Video Editor</p>
+        <p class="xp-note"><small>Solar &amp; battery installer · Australia</small>Video for an Australian solar and battery installer, made for the Australian market.</p>
+      </div>
+      <div class="xp-row">
+        <h3 class="xp-co">Aves Digital</h3>
+        <p class="xp-role">Creative Head</p>
+        <p class="xp-note"><small>Digital agency · Dhaka</small>Led the creative side, cutting for more than six creators at once. It's the fastest way to learn that no two channels want the same rhythm.</p>
+      </div>
+      <div class="xp-row">
+        <h3 class="xp-co">Quantanite</h3>
+        <p class="xp-role">Video Editor</p>
+        <p class="xp-note"><small>Global outsourcing &amp; AI services · Dhaka</small>An international company that runs digital and AI-backed services for global clients from its Dhaka operation.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="wrap block" id="about">
+    <div class="about">
+      <div>
+        <figure class="portrait"><img src="media/munna.jpg" alt="Portrait of Nuruddin Munna" width="640" height="853" loading="lazy"></figure>
+        <p class="cap"><span>Nuruddin Munna</span><span>Bangladesh · UTC+6</span></p>
+      </div>
+      <div class="bio">
+        <p class="eyebrow">About</p>
+        <h2>Three years in the edit, most of it in other people's voices.</h2>
+        <p>I've cut video agency-side as <strong>creative head at Aves Digital</strong>, for an Australian solar and battery brand at <strong>Electrifying Australia</strong>, and at <strong>Quantanite</strong>. I also work directly with brands, agencies and creators across four countries.</p>
+        <p><strong>Premiere Pro for the cut, After Effects for everything that moves on top of it.</strong> What I care about is retention: the cold open that stops a thumb, the trims nobody notices, the caption that lands one frame before the word.</p>
+        <p>Tell me what the video is for (a launch, a lead magnet, a weekly episode) and I'll cut for that, not just for looks.</p>
+        <div class="tools">
+          <div class="tool"><h4>Adobe Premiere Pro</h4><p>Edit, assembly, sound, colour, delivery</p></div>
+          <div class="tool"><h4>Adobe After Effects</h4><p>Motion graphics, titles, animated builds</p></div>
+        </div>
+        <div class="clients">
+          <p class="eyebrow">Clients &amp; creators</p>
+          <ul>
+            <li><span class="what">Real estate education &amp; buyer videos</span><span class="who">Wiseman Realty · NSW</span></li>
+            <li><span class="what">Relocation interview reels</span><span class="who">Smart Move Italy</span></li>
+            <li><span class="what">Business explainer &amp; motion graphics</span><span class="who">Pierre Perry</span></li>
+            <li><span class="what">AI explainer shorts</span><span class="who">Rahi</span></li>
+            <li><span class="what">Video editor &amp; motion graphics</span><span class="who">Podcast Spacelist</span></li>
+            <li><span class="what">Brand video</span><span class="who">Agro Canned Fish</span></li>
+            <li><span class="what">Brand video</span><span class="who">Asha Food</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="wrap block" aria-labelledby="fb-title">
+    <div class="fb-head">
+      <p class="eyebrow">Client feedback</p>
+      <h2 id="fb-title">What clients said</h2>
+    </div>
+    <div class="quotes">
+      <figure class="quote">
+        <blockquote>"They understood my vision perfectly and brought it to life with creativity and precision. The editing was seamless, transitions were smooth, and the overall quality was outstanding. They delivered the project ahead of schedule, which was a huge plus."</blockquote>
+        <figcaption>Client · short-form project</figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>"The attention to detail, colour grading, and dynamic effects made my video stand out. Incredibly professional, responsive, and open to feedback throughout the entire process. I'll definitely hire them again."</blockquote>
+        <figcaption>Client · brand video</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="wrap" id="contact">
+    <div class="contact">
+      <p class="eyebrow"><span class="rec" aria-hidden="true"></span>Start a project</p>
+      <h2>Send me a clip and what it's for.</h2>
+      <p class="lede">I'll tell you exactly how I'd cut it (format, pacing, what to keep and what to lose) before you pay anything. My working hours overlap with Australia in the morning and with the UK, US and Canada in the evening.</p>
+      <div class="lines">
+        <div class="line">
+          <span class="k">Email</span>
+          <span class="v" id="email-v">nuruddin.munna444@gmail.com</span>
+          <span class="act"><button class="mini" type="button" data-copy="nuruddin.munna444@gmail.com" data-target="email-v">Copy</button><a class="mini" href="mailto:nuruddin.munna444@gmail.com?subject=Video%20editing%20project">Write</a></span>
+        </div>
+        <div class="line">
+          <span class="k">WhatsApp</span>
+          <span class="v" id="wa-v">+880 1881 461001</span>
+          <span class="act"><button class="mini" type="button" data-copy="+8801881461001" data-target="wa-v">Copy</button><a class="mini" href="https://wa.me/8801881461001" target="_blank" rel="noopener">Open chat</a></span>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="btn btn-fill" href="https://wa.me/8801881461001" target="_blank" rel="noopener">Message on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <div class="foot">
+      <span>Nuruddin Munna · Video Editor &amp; Motion Graphics</span>
+      <span>Clients in UK · US · AU · CA</span>
+    </div>
+  </footer>
+</main>
+
+<dialog class="player" id="player" aria-labelledby="p-title">
+  <div class="p-in">
+    <div class="p-media"><video id="p-video" controls playsinline preload="metadata"></video></div>
+    <div class="p-info">
+      <div class="p-top">
+        <span class="p-track"><span class="sw" id="p-sw"></span><span id="p-track"></span></span>
+        <button class="x" type="button" id="p-close" aria-label="Close player"><svg viewBox="0 0 14 14"><path d="M2 2l10 10M12 2L2 12"/></svg></button>
+      </div>
+      <p class="p-who" id="p-who"></p>
+      <h3 id="p-title"></h3>
+      <p class="p-desc" id="p-desc"></p>
+      <p class="p-note" id="p-note" hidden></p>
+      <a class="mini p-link" id="p-link" href="#" target="_blank" rel="noopener" hidden></a>
+      <dl class="specs">
+        <div><dt>Runtime</dt><dd id="p-tc"></dd></div>
+        <div><dt>Format</dt><dd id="p-fmt"></dd></div>
+      </dl>
+      <div class="p-nav">
+        <button class="mini" type="button" id="p-prev">← Previous</button>
+        <button class="mini" type="button" id="p-next">Next →</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script type="application/json" id="work-data">{"items": {"traders": {"id": "traders", "orient": "v", "src": "media/traders.mp4", "poster": "media/traders.jpg", "title": "3 Mistakes Traders Make When Picking Stocks", "tag": "Finance", "who": "Finance creator", "desc": "A talking head built around an animated 3-2-1 countdown that gives the whole video its structure. One-word kinetic captions, B-roll cutaways, and screen-recorded stock-screener demos on a clean lavender card.", "tc": "00:01:04:19", "format": "9:16 · 30 fps", "note": "", "track": "V1"}, "ajoy": {"id": "ajoy", "orient": "v", "src": "media/ajoy.mp4", "poster": "media/ajoy.jpg", "title": "The Question Before You Buy", "tag": "Real estate", "who": "Wiseman Realty", "desc": "A buyer-decision video for Md Ajoy Cena (JP), Principal & Director at Wiseman Realty. Branded agent header, stacked captions that scale up on the key word, stock B-roll for every example, and a logo end card. Mastered in 4K vertical.", "tc": "00:00:52:13", "format": "9:16 · 30 fps", "note": "", "track": "V1"}, "clip1": {"id": "clip1", "orient": "v", "src": "media/clip1.mp4", "poster": "media/clip1.jpg", "title": "Walmart Over Real Estate", "tag": "Podcast clip", "who": "Podcast", "desc": "A podcast moment cut for vertical: a stacked split-screen while the host reacts, a clean single when the guest carries the point, and two-tone captions that flag the keywords in lime. 4K master.", "tc": "00:00:50:01", "format": "9:16 · 23.976 fps", "note": "", "track": "V1"}, "oos": {"id": "oos", "orient": "v", "src": "media/oos.mp4", "poster": "media/oos.jpg", "title": "Out of Sight, Out of Mind", "tag": "Podcast clip", "who": "Podcast", "desc": "A podcast segment pulled out as a standalone reel. The strongest line is moved to the first three seconds, with punch-ins on the emphasis and kinetic captions timed to the syllable.", "tc": "00:01:00:12", "format": "9:16 · 30 fps", "note": "", "track": "V1"}, "italy": {"id": "italy", "orient": "v", "src": "media/italy.mp4", "poster": "media/italy.jpg", "title": "Americans Who Moved to Italy", "tag": "Interview reel", "who": "Smart Move Italy", "desc": "A sit-down interview with a couple who relocated, intercut with aerial shots of the town they live in now. Big stacked captions in the brand green pull the quotable lines out of the conversation.", "tc": "00:00:48:05", "format": "9:16 · 23.976 fps", "note": "", "track": "V1"}, "claude": {"id": "claude", "orient": "v", "src": "media/claude.mp4", "poster": "media/claude.jpg", "title": "AI Callback Logic, Built with Claude", "tag": "AI explainer", "who": "Rahi", "desc": "A tech explainer that moves between the presenter, picture-in-picture over clean white layouts, 3D app icons, screen recordings of the build, and animated callouts for recovered leads and bookings. 32 seconds with no dead frames.", "tc": "00:00:31:17", "format": "9:16 · 25 fps", "note": "", "track": "V1"}, "sconye": {"id": "sconye", "orient": "v", "src": "media/sconye.mp4", "poster": "media/sconye.jpg", "title": "Paranormal Storytime", "tag": "Storytime", "who": "Storytelling creator", "desc": "A two-minute ghost story that keeps people watching. A persistent series label, uppercase word-by-word captions, and atmospheric B-roll (a night field, a dark treeline, a drain) cut in exactly where the story needs it.", "tc": "00:01:52:17", "format": "9:16 · 23.976 fps", "note": "", "track": "V1"}, "trailer": {"id": "trailer", "orient": "v", "src": "media/trailer.mp4", "poster": "media/trailer.jpg", "title": "Two-Host Podcast Trailer", "tag": "Podcast trailer", "who": "The Vertical Buzz", "desc": "A one-minute trailer for a two-host show. A stacked split-screen for the back-and-forth, tight singles for the lines that land, and clean uppercase captions throughout.", "tc": "00:00:59:19", "format": "9:16 · 23.976 fps", "note": "", "track": "V1"}, "gala": {"id": "gala", "orient": "v", "src": "media/gala.mp4", "poster": "media/gala.jpg", "title": "Holiday Gala Highlight", "tag": "Event film", "who": "Event recap", "desc": "An aerial cold open over the harbour, the red-carpet arrival, then the whole night cut to the beat: the guests, the band, the floor. Built as a vertical recap the host could post the next morning.", "tc": "00:00:37:24", "format": "9:16 · 29.97 fps", "note": "", "track": "V1"}, "stamp": {"id": "stamp", "orient": "v", "src": "media/stamp.mp4", "poster": "media/stamp.jpg", "title": "Transfer Duty in NSW", "tag": "Real estate", "who": "Wiseman Realty", "desc": "Stamp duty explained for first-time buyers in New South Wales. Word-level captions, a branded lower third, and every dead beat between sentences trimmed so an 80-second explainer never drags.", "tc": "00:01:20:19", "format": "9:16 · 30 fps", "note": "", "track": "V1"}, "gemini": {"id": "gemini", "orient": "h", "src": "media/gemini.mp4", "poster": "media/gemini.jpg", "title": "Google Gemini Will Dominate ChatGPT in 2026", "tag": "YouTube", "who": "Tech & markets channel", "desc": "A six-and-a-half-minute YouTube essay. A talking head in a dark office, screen recordings of ChatGPT and Google with a circular face-cam, full-screen logo title cards on navy, stock charts, and on-location B-roll to break the rhythm.", "tc": "00:06:38:02", "format": "16:9 · 30 fps", "note": "Plays the first 01:15 of 06:38", "track": "V2"}, "long22": {"id": "long22", "orient": "h", "src": "media/long22.mp4", "poster": "media/long22.jpg", "title": "Choosing Who You Are", "tag": "YouTube", "who": "Self-development channel", "desc": "A self-development essay. A studio talking head against a pale grid, broken up with monochrome illustrated scenes, soft-focus type reveals, and a checklist build that lands each idea before moving on.", "tc": "00:06:19:00", "format": "16:9 · 30 fps", "note": "Plays the first 01:15 of 06:19", "track": "V2"}, "onlyg": {"id": "onlyg", "orient": "h", "src": "media/onlyg.mp4", "poster": "media/onlyg.jpg", "title": "What a Healthy Account Looks Like", "tag": "Business", "who": "Creator-agency coach", "desc": "A business talking head shot against a garden window. It opens on a bold stat, colours the operative words in the captions, and builds frosted-glass bullet panels one risk at a time.", "tc": "00:00:51:13", "format": "16:9 · 30 fps", "note": "", "track": "V2"}, "pierre": {"id": "pierre", "orient": "h", "src": "media/pierre.mp4", "poster": "media/pierre.jpg", "title": "The One Metric That Matters", "tag": "Motion graphics", "who": "Pierre Perry", "desc": "A business explainer for contractors. The talking head carries the argument while animated icon systems and a stat callout carry the proof. Every build is drawn in After Effects and timed to the line he lands on.", "tc": "00:00:22:21", "format": "16:9 · 24 fps", "note": "", "track": "V2"}, "p_rel": {"id": "p_rel", "orient": "h", "src": "media/p_rel.mp4", "poster": "media/p_rel.jpg", "title": "Relatables, Studio Episode", "tag": "Podcast", "who": "Relatables", "desc": "A studio show that opens on a 'Coming up' teaser: black-and-white flash frames, graphic stickers and the best lines of the episode up front. Then camera switches that follow the conversation, with the show's artwork kept in frame on the set monitor.", "tc": "00:01:32:03", "format": "16:9 · 30 fps", "note": "Plays the first 00:25 of 01:32", "track": "V3", "link": "https://www.youtube.com/@relatables7858", "linkLabel": "Watch Relatables on YouTube"}, "p_unc": {"id": "p_unc", "orient": "h", "src": "media/p_unc.mp4", "poster": "media/p_unc.jpg", "title": "Uncensored, Two-Guest Sit-Down", "tag": "Podcast", "who": "Uncensored with Mx Tomie", "desc": "A two-guest conversation on a styled set. A wide establishing shot, singles on whoever is speaking, the show logo held as a corner bug, and a grade that keeps the red and pink set rich without pushing skin tones.", "tc": "00:02:09:14", "format": "16:9 · 30 fps", "note": "Plays the first 00:25 of 02:09", "track": "V3", "link": "https://www.youtube.com/@UncensoredWithMxTomie", "linkLabel": "Watch Uncensored with Mx Tomie on YouTube"}, "p_chi": {"id": "p_chi", "orient": "h", "src": "media/p_chi.mp4", "poster": "media/p_chi.jpg", "title": "Remote Interview: Corey Hiben & Dr Bobby Ilijasevic", "tag": "Podcast", "who": "Chirox Marketing", "desc": "A remote interview recorded on two separate webcams, laid out side by side so both faces stay on screen. Name lower thirds for each speaker and burned-in captions so the episode works with the sound off.", "tc": "00:02:09:10", "format": "16:9 · 30 fps", "note": "Plays the first 00:25 of 02:09", "track": "V3", "link": "https://www.youtube.com/@chiroxmarketing", "linkLabel": "Watch Chirox Marketing on YouTube"}, "s_funnels": {"id": "s_funnels", "orient": "v", "src": "media/s_funnels.mp4", "poster": "media/s_funnels.jpg", "title": "The Two Funnels Every $1M Business Must Have", "tag": "Podcast clip", "who": "Chirox Marketing", "desc": "A remote interview reframed for vertical: guest on top, host underneath, and one-word captions on the seam with the number in yellow so the hook reads at a glance.", "tc": "00:00:59:16", "format": "9:16 · 29.97 fps", "note": "Plays the first 00:15 of 01:00", "track": "V1", "link": "https://www.youtube.com/shorts/1dLrrOOQ9Jw", "linkLabel": "Watch the full Short on YouTube"}, "s_fleet": {"id": "s_fleet", "orient": "v", "src": "media/s_fleet.mp4", "poster": "media/s_fleet.jpg", "title": "Fleet Week Is My Weakness", "tag": "Podcast clip", "who": "Uncensored with Mx Tomie", "desc": "A two-guest moment stacked top and bottom, bold red uppercase captions between the shots, and the show bug held at the top of frame.", "tc": "00:00:43:04", "format": "9:16 · 29.97 fps", "note": "Plays the first 00:15 of 00:43", "track": "V1", "link": "https://www.youtube.com/shorts/e0v0_-Hwdbk", "linkLabel": "Watch the full Short on YouTube"}, "s_rel9": {"id": "s_rel9", "orient": "v", "src": "media/s_rel9.mp4", "poster": "media/s_rel9.jpg", "title": "Relatables, 9 November Episode", "tag": "Podcast clip", "who": "Relatables", "desc": "A three-host studio moment reframed into single vertical shots that follow whoever is talking, with small word-by-word captions kept low and out of the way.", "tc": "00:01:01:17", "format": "9:16 · 24 fps", "note": "Plays the first 00:15 of 01:02", "track": "V1", "link": "https://www.youtube.com/shorts/QNEVD_yOmlc", "linkLabel": "Watch the full Short on YouTube"}, "s_leaders": {"id": "s_leaders", "orient": "v", "src": "media/s_leaders.mp4", "poster": "media/s_leaders.jpg", "title": "Why Great Leaders Build Other Leaders", "tag": "Podcast clip", "who": "Chirox Marketing", "desc": "A leadership point pulled from a remote interview. Stacked split-screen, the speaker's line captioned word by word with the key phrase highlighted in yellow.", "tc": "00:00:44:19", "format": "9:16 · 29.97 fps", "note": "Plays the first 00:15 of 00:45", "track": "V1", "link": "https://www.youtube.com/shorts/x8M7ozcXFJw", "linkLabel": "Watch the full Short on YouTube"}, "s_bully": {"id": "s_bully", "orient": "v", "src": "media/s_bully.mp4", "poster": "media/s_bully.jpg", "title": "We Loved Bullying Boys as Kids", "tag": "Podcast clip", "who": "Uncensored with Mx Tomie", "desc": "A two-minute storytime from the show. Split-screen for the back-and-forth, full-frame singles when one guest carries the story, and red and blue uppercase captions that switch colour with the speaker.", "tc": "00:02:19:26", "format": "9:16 · 29.97 fps", "note": "Plays the first 00:15 of 02:20", "track": "V1", "link": "https://www.youtube.com/shorts/hAVxy9-hiIU", "linkLabel": "Watch the full Short on YouTube"}, "s_rel7": {"id": "s_rel7", "orient": "v", "src": "media/s_rel7.mp4", "poster": "media/s_rel7.jpg", "title": "Relatables, 7 November Episode", "tag": "Podcast clip", "who": "Relatables", "desc": "A short, fast studio moment: a single vertical shot on the host, trimmed tight to the reaction, with clean word-by-word captions.", "tc": "00:00:25:22", "format": "9:16 · 24 fps", "note": "Plays the first 00:15 of 00:26", "track": "V1", "link": "https://www.youtube.com/shorts/h_nsRvVQNQ4", "linkLabel": "Watch the full Short on YouTube"}}, "order": ["s_funnels", "s_fleet", "s_rel9", "s_leaders", "s_bully", "s_rel7", "traders", "ajoy", "clip1", "oos", "italy", "claude", "sconye", "trailer", "gala", "stamp", "gemini", "long22", "onlyg", "pierre", "p_rel", "p_unc", "p_chi"]}</script>
+
+
+
+
+
+
+
+
+
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('work-data').textContent);
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* hero reel + live timecode */
+  var reel = document.getElementById('reel'), tcEl = document.getElementById('reel-tc');
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  function tc(t){ var f = Math.floor(t * 30), s = Math.floor(f / 30); return '00:' + pad(Math.floor(s / 60)) + ':' + pad(s % 60) + ':' + pad(f % 30); }
+  if (reel) {
+    if (reduce) { reel.removeAttribute('autoplay'); reel.pause(); reel.setAttribute('controls', ''); }
+    (function tick(){ if (!reel.paused) tcEl.textContent = tc(reel.currentTime); requestAnimationFrame(tick); })();
+  }
+
+  /* timeline readout + playhead */
+  var readout = document.getElementById('readout'), ph = document.getElementById('playhead');
+  var restHTML = readout.innerHTML, clips = document.querySelectorAll('.clip');
+  function show(c){
+    var it = D.items[c.dataset.play];
+    clips.forEach(function(x){ x.classList.toggle('on', x === c); });
+    ph.style.left = c.dataset.t0 + '%';
+    readout.innerHTML = '<span class="k">' + it.track + ' ·</span> ' + escapeHTML(it.title) + ' <span class="k">· in</span> ' + c.dataset.in + ' <span class="k">out</span> ' + c.dataset.out;
+  }
+  function rest(){ clips.forEach(function(x){ x.classList.remove('on'); }); readout.innerHTML = restHTML; }
+  clips.forEach(function(c){
+    c.addEventListener('mouseenter', function(){ show(c); });
+    c.addEventListener('focus', function(){ show(c); });
+    c.addEventListener('mouseleave', rest);
+    c.addEventListener('blur', rest);
+  });
+  function escapeHTML(s){ var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+  /* player */
+  var dlg = document.getElementById('player'), vid = document.getElementById('p-video'), current = null;
+  var $ = function(id){ return document.getElementById(id); };
+  function load(id){
+    var it = D.items[id]; if (!it) return;
+    current = id;
+    dlg.classList.toggle('is-v', it.orient === 'v');
+    dlg.classList.toggle('is-h', it.orient === 'h');
+    $('p-sw').className = 'sw' + (it.orient === 'h' ? ' h' : '');
+    $('p-track').textContent = it.track + ' · ' + (it.orient === 'h' ? 'Horizontal' : 'Vertical') + ' · ' + it.tag;
+    $('p-who').textContent = it.who;
+    $('p-title').textContent = it.title;
+    $('p-desc').textContent = it.desc;
+    $('p-tc').textContent = it.tc;
+    $('p-fmt').textContent = it.format;
+    $('p-note').hidden = !it.note; $('p-note').textContent = it.note;
+    vid.poster = it.poster;
+    var ln = $('p-link'); ln.hidden = !it.link; if (it.link) { ln.href = it.link; ln.textContent = it.linkLabel; }
+    if (it.embed && !it.src) { var e = document.getElementById(it.embed); it.src = e ? e.textContent.trim() : ''; }
+    vid.src = it.src;
+    var p = vid.play(); if (p && p.catch) p.catch(function(){});
+  }
+  function open(id){
+    if (reel) reel.pause();
+    load(id);
+    if (!dlg.open) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', ''); }
+  }
+  function close(){
+    vid.pause(); vid.removeAttribute('src'); vid.load();
+    if (dlg.open) dlg.close();
+  }
+  function step(d){
+    var i = D.order.indexOf(current), n = D.order.length;
+    load(D.order[(i + d + n) % n]);
+  }
+  dlg.addEventListener('close', function(){
+    vid.pause(); vid.removeAttribute('src'); vid.load();
+    if (reel && !reduce) { var p = reel.play(); if (p && p.catch) p.catch(function(){}); }
+  });
+  dlg.addEventListener('click', function(e){ if (e.target === dlg) close(); });
+  $('p-close').addEventListener('click', close);
+  $('p-prev').addEventListener('click', function(){ step(-1); });
+  $('p-next').addEventListener('click', function(){ step(1); });
+  dlg.addEventListener('keydown', function(e){
+    if (e.target === vid) return;
+    if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+  });
+  document.querySelectorAll('[data-play]').forEach(function(b){
+    b.addEventListener('click', function(){ open(b.dataset.play); });
+  });
+
+  /* copy buttons */
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var text = b.dataset.copy, label = b.textContent;
+      function done(){ b.textContent = 'Copied'; b.classList.add('ok'); setTimeout(function(){ b.textContent = label; b.classList.remove('ok'); }, 1600); }
+      function fallback(){
+        var el = document.getElementById(b.dataset.target), r = document.createRange();
+        r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        b.textContent = 'Selected'; setTimeout(function(){ b.textContent = label; }, 1600);
+      }
+      try { navigator.clipboard.writeText(text).then(done, fallback); } catch (e) { fallback(); }
+    });
+  });
+})();
+</script>
+
+</body></html>
